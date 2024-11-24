@@ -3,10 +3,18 @@
 #include <time.h>
 #include <assert.h>
 #include <string.h>
+
+/* This project is Rock Paper Scissors games that you can play on termianl for once.
+ * It is the first project that I made when I finish the beginner course on W3 for C
+ */
+
+// this function giving us rondom number between minimum value and maximum values
 int randNumber(int min, int max)
 {
   return (rand() % (max - min + 1) + min);
 }
+
+// this function checking the final state like is it win or lose maybe Tie.
 void didWin(char v1[], char v2[])
 {
   if (strcmp(v1, v2) == 0)
