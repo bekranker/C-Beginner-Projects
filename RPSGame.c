@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include <assert.h>
 #include <string.h>
 
 /* This project is Rock Paper Scissors games that you can play on termianl for once.
