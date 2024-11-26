@@ -18,8 +18,14 @@ int wordCounter(char words[])
 int main()
 {
   int count = 0;
+  /*
+   *  Sttaic Memory Allocation
+   *  char line[512] = "";
+   */
   char line[512] = "";
+
   scanf(" %[^\n]", line);
+
   printf("The Line is: %s\nIt has %d words in it !!", line, wordCounter(line));
   return 0;
 }
