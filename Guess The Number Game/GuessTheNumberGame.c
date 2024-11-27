@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 // this function giving you rondom number between minimum and maximum values
 int randNumber(int min, int max)
 {
@@ -31,6 +32,7 @@ void Guess(int health, int computersNumber)
 }
 int main()
 {
+  srand(time(0));
   int health = 3;
   int randomNumber = randNumber(0, 5);
   Guess(health, randomNumber);
